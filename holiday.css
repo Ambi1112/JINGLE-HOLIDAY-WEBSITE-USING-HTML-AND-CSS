@@ -1,0 +1,912 @@
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    
+}
+.ambi{
+   
+width: 100%;
+height: 200px;
+color: black;
+
+}
+.first{
+    color: black;
+}
+header{
+    margin-top: 30px;
+    width:100%;
+    height:150px;
+    display: flex;
+   
+    margin-bottom: 150px;
+    
+    position:relative;
+    
+  
+    
+}
+header .box1{
+    width: 10%;
+    height: 150px;
+    background-image: url("https://jingleholidaybazar.com/images/mainlogo.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    border-radius: 50%;
+}
+header .box2{
+    width: 60%;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    /*background:linear-gradient(white,#ffffff);*/
+    text-align: center;
+}
+header .box2 h1{
+     color: rgb(239, 61, 11);
+     font-size: 100px;
+     font-weight: 500;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header2
+{
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    display:flex;
+    position: fixed;
+    color:black;
+    font-size: larger;
+    font-style: italic;
+    
+}
+.header2 .search{
+    width:20%;
+    background:linear-gradient(rgb(142, 244, 181),rgb(0, 187, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.header2 .search button{    
+    color: black;
+    height: 50px;
+    width:250px;
+    font-size: 40px;
+    text-align: center;
+}
+.header2 .search input{
+    width:350px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.header2 .menubar{
+    position: absolute;
+    margin-top: -350px;
+    margin-left: 300px;
+    width: 300px;
+    height: 100px;
+    /*background:linear-gradient(rgb(241, 244, 242),rgb(0, 187, 255));*/
+    
+}
+
+.header2 .menubar .active {
+    display: inline-flex;
+}
+
+.header2 .menubar .active li{
+    padding: 50px;
+    list-style: none;
+}
+
+.header2 .menubar .active li a{
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.header2 .menubar .active li:hover{
+    background-color: orange;
+    color: blueviolet;
+}
+
+.header2 .menubar .active .submenu{
+    display: none;
+
+}
+
+
+.header2 .menubar ul li:hover .submenu{
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    background-color: blueviolet;
+}
+
+
+.header2 .menubar ul li .submenu ul li a{
+    text-decoration: none;
+}
+
+.slider{
+    margin-top:-1000px ;
+    width: 100%;
+    height: 800px;
+    margin-top: 100px;
+    background-size:cover;
+    background-position: 10px 10px 10px 10px;
+    background-repeat: no-repeat;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes example {
+    0%   {background-image: url("https://cdn.britannica.com/11/83411-050-217610BA/Tiger-monastery-Nest-Buddhist-Bhutan.jpg");}
+    25%  {background-image: url("https://media.cnn.com/api/v1/images/stellar/prod/230210161917-01-japan-never-traveler-culture-tokyo.jpg?c=original");}
+    50%  {background-image: url("https://img.veenaworld.com/wp-content/uploads/2023/09/Cambodia-Tourist-Places-%E2%80%93-Top-10-Attractions-for-a-Memorable-Trip.jpg");}
+    100% {background-image: url("https://static.toiimg.com/img/101545405/Master.jpg");}
+  }
+
+.slider h3{
+    padding: 30px;
+   text-align: center;
+   font-size: 80px;
+   color: azure;
+   font-weight: 150;
+   text-decoration: overline;
+   text-shadow: 10px 10px 20px  black;
+}
+.slider h4{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 150;
+    color: azure;
+    text-shadow: 10px 10px 20px  black;
+ }
+ .content{
+    margin-top: 100px;
+    display: flex;
+    margin-bottom: -90px;
+    
+ }
+ .content .data{
+    width:50%;
+    display:flex;
+
+ }
+ .content .data2{
+    width:50%;
+    display:flex;
+
+ }
+.content .data .side1{
+    border: 10px solid white;
+    width:50%;
+    height:500px;
+    background-image: url("https://jingleholidaybazar.com/images/india-goa-best-beaches-vagator-beach.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content .data .side2{
+    width:50%;
+    height:480px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color:azure ;
+}
+.content .data .side2:hover{
+    background-color:rgb(242, 198, 173) ;
+}
+
+.content .data .side1:hover{
+    
+    border:10px solid rgb(246, 105, 5);
+}
+.content .data .side2 h1{
+    color: rgb(175, 50, 5);
+    font-size: 40px;
+    font-weight:200;
+}
+.content .data .side2 h4{
+    font-size: 20px;
+    font-weight: 80;
+}
+.content .data .side2 h3{
+    font-size: 30px;
+    color: rgb(70, 12, 124);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content .data .side2 h3:hover{
+   
+    background-color: orange;
+    color: rgb(0, 140, 255);
+}
+.content .data2 .side1{
+    margin-top: 10px;
+    width:50%;
+    height:480px;
+    padding: 20px;
+    background-image: url("https://jingleholidaybazar.com/images/Taj-Aravali-Resort-Spa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content .data2 .side1:hover{
+    height: 480px;
+    width: 75%;
+    border:10px solid rgb(246, 105, 5);
+}
+.content .data2 .side2{
+    margin-top: 10px;
+    width:50%;
+    height:480px;
+    padding: 20px;
+    background-color:azure;
+}
+.content .data2 .side2:hover{
+    background-color:rgb(242, 198, 173) ;
+}
+.content .data2 .side2 h1{
+    color: rgb(175, 50, 5);
+    font-size: 40px;
+    font-weight: 80;
+}
+.content .data2 .side2 h4{
+    font-size: 20px;
+    font-weight: 80;
+}
+.content .data2 .side2 h3{
+    font-size: 30px;
+    color: rgb(75, 9, 137);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content .data2 .side2 h3:hover{
+    border-radius: 10px;
+    background-color: orange;
+    color: blueviolet;
+}
+.end{
+    width:100%;
+    height:400px;
+    display: flex;
+    margin-top: 50px;
+    padding: 20px;
+    padding-left: 20px;
+    background:linear-gradient(rgb(242, 247, 244),rgb(0, 187, 255));
+
+}
+.end .part1{
+    padding-left: 50px;
+    
+}
+.end .part1 h1{
+    color: rgb(147, 39, 0);
+    
+}
+.end .part1 ul li {
+    color: black;
+    font-size: 25px;
+    font-weight: 50;
+}
+.end .part2{
+    padding-left: 40px;
+    width:30%;
+}
+.end .part2 h1{
+    color: rgb(118, 32, 1);
+   
+}
+.end .part2 ul li {
+    color: black;
+   
+    font-size: 25px;
+    font-weight: 50;
+}
+.end .part3{
+    padding-left: 40px;
+    width:30%;
+}
+.end .part3 h1{
+    color: rgb(123, 33, 0);
+    font-size: 60px;
+    font-weight: 150;
+}
+.end .part3 ul li {
+    color: black;
+    font-size: 25px;
+    font-weight: 50;
+}
+.end .part4{
+    padding-left: 40px;
+    width:30%;
+}
+.end .part4 h1{
+    color: rgb(118, 33, 2);
+    font-size: 60px;
+    font-weight: 150;
+}
+.end .part4 ul li {
+    color: black;
+    font-size: 25px;
+    font-weight: 50;
+}
+.multiple{
+    width: 100%;
+    height: 800px;
+    margin-top: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.multiple .photo1{
+    width:20%;
+    height:900px;
+    padding: 10px;
+    border:10px solid white;
+    background-size: cover;
+    background-image: url("https://jingleholidaybazar.com/images/Mussoorie1.jpg");
+}
+.multiple .photo1:hover{
+    width: 60%;
+    height: 1200px;
+    border:10px solid rgb(255, 25, 0);
+}
+.multiple .photo2{
+    width:20%;
+    height:900px;
+    padding: 10px;
+    border:10px solid white;
+    background-size: cover;
+    background-image: url("https://jingleholidaybazar.com/images/Khajjiar.jpg");
+}
+.multiple .photo2:hover{
+    width: 60%;
+    height: 1200px;
+    border:10px solid rgb(255, 25, 0);
+}
+.multiple .photo3{
+    width:20%;
+    height:900px;
+    padding: 10px;
+    border:10px solid white;
+    background-size: cover;
+    background-image: url("https://jingleholidaybazar.com/images/Jim-Corbett.jpg");
+}
+.multiple .photo3:hover{
+    width: 60%;
+    height: 1200px;
+    border:10px solid rgb(255, 25, 0);
+}
+.multiple .photo4{
+    width:20%;
+    height:900px;
+    padding: 10px;
+    border:10px solid white;
+    background-size: cover;
+    background-image: url("https://jingleholidaybazar.com/images/Shimla1.jpg");
+}
+.multiple .photo4:hover{
+    width: 60%;
+    height: 1200px;
+    border:10px solid rgb(255, 25, 0);
+}
+.multiple .photo5{
+    width:20%;
+    height:900px;
+    padding: 10px;
+    border:10px solid white;
+    background-size: cover;
+    background-image: url("https://jingleholidaybazar.com/images/Manali1-1.jpg");
+}
+.multiple .photo5:hover{
+    width: 60%;
+    height: 1200px;
+    border:10px solid rgb(255, 25, 0);
+}
+
+.multiple .photo1 h1 {
+    margin-left: 300px;
+    font-size: 60px;
+    color: black;
+    font-weight: 150;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background:linear-gradient(rgb(244, 197, 11),rgb(0, 187, 255));
+    text-align: center;
+}
+.multiple .photo2 h1 {
+    margin-left: 300px;
+    font-size: 60px;
+    color: black;
+    font-weight: 150;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background:linear-gradient(rgb(244, 197, 11),rgb(0, 187, 255));
+    text-align: center;
+}
+.multiple .photo3 h1 {
+    font-size: 60px;
+    color: black;
+    font-weight: 150;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background:linear-gradient(rgb(244, 197, 11),rgb(0, 187, 255));
+    text-align: center;
+}
+.multiple .photo4 h1 {
+    font-size: 60px;
+    color: black;
+    font-weight: 150;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background:linear-gradient(rgb(244, 197, 11),rgb(0, 187, 255));
+    text-align: center;
+}
+.multiple .photo5 h1 {
+    font-size: 60px;
+    color: black;
+    font-weight: 150;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background:linear-gradient(rgb(244, 197, 11),rgb(0, 187, 255));
+    text-align: center;
+}
+.ambi{
+    margin-top: -327px;
+    margin-left: 145px;
+    margin-right: 300px;
+    color: black;
+    background-color: #cee4f6;
+    width: 95%;
+    height: 100px;
+    border-radius: 1%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+  }
+ 
+  label.logo{
+    color: rgb(9, 9, 9);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: rgb(9, 9, 9);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: rgb(9, 9, 9);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
+.space{
+    margin-top: -240px;
+}  
+  .details{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .container{
+   margin-bottom: -50px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.box1{
+border:2pxs solid red;
+width:400px;
+height:300px;
+
+background-color: rgb(246, 252, 252);
+overflow-x: hidden;
+}
+.box2{
+border:2pxs solid rgb(7, 7, 7);
+width:400px;
+height:300px;
+margin:10px;
+
+overflow-x: hidden;
+}
+.box3{
+border:2pxs solid rgb(241, 7, 136);
+width:400px;
+height:300px;
+margin:10px;
+background-color: rgb(249, 185, 8);
+overflow-x: hidden;
+}
+.our{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 2px solid rgb(243, 241, 241);
+    width: 100%;
+    height: 120px;
+    background-color: antiquewhite;
+    color:red
+}
+.divide{
+    flex-direction:row-reverse;
+    flex-wrap: wrap-reverse;
+}
+.destination{
+    margin-top: 20px;
+    margin-bottom: -80px;
+    border: 2px solid rgb(243, 241, 241);
+    width: 100%;
+    height: 180px;
+    background-color: antiquewhite;
+    color:red
+}
+.international{
+    margin-top: 100px;
+    margin-bottom: -60px;
+    border: 2px solid rgb(243, 241, 241);
+    width: 100%;
+    height: 150px;
+    background-color: antiquewhite;
+    color:red
+}
+.content1{
+    margin-top: 100px;
+    display: flex;
+    
+    
+ }
+ .content1 .data3{
+    width:50%;
+    display:flex;
+
+ }
+ .content1 .data4{
+    width:50%;
+    display:flex;
+
+ }
+.content1 .data3 .side3{
+    
+    background-image:url("https://www.shutterstock.com/image-photo/metro-railway-among-glass-skyscrapers-600nw-2185205475.jpg");
+    border: 10px solid white;
+    width:50%;
+    height:500px;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content1 .data3 .side4{
+    width:50%;
+    height:480px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color:azure ;
+}
+.content1 .data3 .side4:hover{
+    background-color:rgb(242, 198, 173) ;
+}
+
+.content1 .data3 .side3:hover{
+    border:10px solid rgb(246, 105, 5);
+}
+.content1 .data3 .side4 h1{
+    color: rgb(175, 50, 5);
+    font-size: 40px;
+    font-weight:200;
+}
+.content1 .data3 .side4 h4{
+    font-size: 20px;
+    font-weight: 80;
+}
+.content1 .data3 .side4 h3{
+    font-size: 30px;
+    color: rgb(70, 12, 124);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content1 .data3 .side4 h3:hover{
+   
+    background-color: orange;
+    color: rgb(0, 140, 255);
+}
+.content1 .data4 .side3{
+    
+    background-image: url("https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRWq2McETdupJn6Syu94u2HWd5M_scwybwyhexCYYAv0_iFvgZR3r8O_4wScg3l9udxK2XbpzRt7scGkyl_CY-B9f2ZziyYN4gZUgaaVQ");
+    margin-top: 10px;
+    width:50%;
+    height:480px;
+    padding: 20px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content1 .data4 .side3:hover{
+    height: 480px;
+    width: 75%;
+    border:10px solid rgb(246, 105, 5);
+}
+.content1 .data4 .side4{
+    margin-top: 10px;
+    width:50%;
+    height:480px;
+    padding: 20px;
+    background-color:azure;
+}
+.content1 .data4 .side4:hover{
+    background-color:rgb(242, 198, 173) ;
+}
+.content1 .data4 .side4 h1{
+    color: rgb(175, 50, 5);
+    font-size: 40px;
+    font-weight: 80;
+}
+.content1 .data4 .side4 h4{
+    font-size: 20px;
+    font-weight: 80;
+}
+.content1 .data4 .side4 h3{
+    font-size: 30px;
+    color: rgb(75, 9, 137);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content1 .data4 .side4 h3:hover{
+    border-radius: 10px;
+    background-color: orange;
+    color: blueviolet;
+}
+.National{
+    margin-top: 5px;
+    margin-bottom: 50px;
+    border: 2px solid rgb(243, 241, 241);
+    width: 100%;
+    height: 180px;
+    background-color: antiquewhite;
+    color:red
+
+}
+
+.Mani{
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-bottom: -70px;
+
+}
+.manali{
+    
+    margin-left: 10px;
+
+}
+
+.solang1{
+   width: 200px;
+   height: 300px;
+    color: black;
+}
+.ladakh{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+ 
+}
+.ladakh1{
+    border: 2px solid white;
+   
+    width: 600px;
+    height: 300px;
+     color: black;
+}
+.ladakh1.h1{
+    color: #0082e6;
+}
+.gallary{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid rgb(243, 241, 241);
+    width: 100%;
+    height: 120px;
+    background-color: antiquewhite;
+    color:red
+}
+div.flex-row{
+    display: flex;
+    flex-direction: flex-row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+div.flex-item{
+    width: 250px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow',https://srv.buysellads.com/ads/click/x/GTND42JICV7DKK7MCTALYKQNCK7DC27MCABDTZ3JCY7I623JCWYDE2JKCKBIVKQJFTSDT23YCY7D5K7JCAADK53KC6SDCKJLCWYDEK3EHJNCLSIZ Arial, sans-serif;
+    height:100%;
+}
+div.flex-item img{
+    width: 100%;
+    height: 200px;
+    border-radius: 0px;
+    border: 1px solid black;
+    box-shadow: 1px 2px 3px 0px;
+}
+div.flex-item h1{
+    font-size: 1.8rem;
+    padding-left: 5px;
+    text-align: center;
+    text-shadow: 1px 0.5px 1.7px #1f291f;
+    
+}
+div.flex-item p{
+    font-size: 1rem;
+    padding-left: 6px;
+}
+div.flex-item button{
+    margin-bottom: 20px;
+    margin-left: 30px;
+    padding: 12px 55px 12px 55px;
+    color: white;
+    background-color: gray;
+    border: none;
+    font-size: 1.2rem;
+
+}
+div.flex-item button:hover{
+    background-color: black;
+    cursor: pointer;
+}
+div#flex-item-1 button{
+    top: 12px;
+    bottom: 2px;
+    border-radius: 2px;
+
+}
+*{
+   
+    box-sizing: border-box;
+    margin-bottom: 1.4rem;
+    
+}
+ 
+.flex-item{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px bisque inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px bisque inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px bisque inset;
+}
+.flex-item:before, .flex-item:after
+{
+  content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 30px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 30px rgba(0,0,0,0.8);
+    box-shadow:0 0 30px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.flex-item:after
+{
+  right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+/* -------------------------------------------------------*/
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    text-overflow: hidden;
+    text-shadow: 3px 3px 13px rgb(3, 55, 87);
+}
+
+legend{
+    text-shadow: 1px 0.5px 1.9px #1f291f;
+    font-size: 20px;    
+}
+
+.field_set{
+    border-color: rgb(15, 9, 9);
+    border-radius: 3px;
+    box-shadow: 0.4px 0.4px 1px rgba(31, 21, 21, 0.795);
+}
+.gallary1{
+    margin-bottom: 20px;
+}
+.gond{
+    width: 550px;
+   height: 300px;
+    color: black;
+}
+.ankit{
+    margin-right: 180px;
+    margin-top: -70px;
+}
